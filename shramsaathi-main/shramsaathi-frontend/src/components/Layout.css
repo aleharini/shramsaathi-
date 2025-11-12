@@ -1,0 +1,61 @@
+/* src/components/Layout.css */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.layout-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .layout-content {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add selection color */
+::selection {
+  background-color: #1a237e;
+  color: white;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a237e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283593;
+}

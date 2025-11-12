@@ -1,0 +1,73 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 64px); /* Full height minus header */
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Worker popup styling */
+.worker-popup {
+  padding: 10px;
+  min-width: 200px;
+}
+
+.worker-popup h3 {
+  margin: 0 0 10px;
+  color: #1a73e8;
+  font-size: 1.1em;
+}
+
+.worker-popup p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.worker-popup strong {
+  color: #555;
+}
+
+/* Ensure popup appears above other elements */
+.leaflet-popup {
+  z-index: 1000;
+}
+
+/* Marker cluster customization */
+.marker-cluster {
+  background: rgba(26, 115, 232, 0.6);
+  border: 3px solid rgba(26, 115, 232, 0.4);
+  border-radius: 50%;
+  color: white;
+  height: 40px;
+  line-height: 37px;
+  text-align: center;
+  width: 40px;
+}
+
+.marker-cluster div {
+  background-color: rgba(26, 115, 232, 0.6);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-top: 3px;
+  text-align: center;
+  line-height: 34px;
+}
+
+/* Loading state */
+.map-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}

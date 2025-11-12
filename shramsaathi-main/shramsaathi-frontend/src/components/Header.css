@@ -1,0 +1,109 @@
+/* src/components/Header.css */
+.header {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.header-time {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-search input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 240px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.header-search input:focus {
+  outline: none;
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.1);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-notification,
+.header-profile {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.header-notification:hover,
+.header-profile:hover {
+  background-color: rgba(26, 35, 126, 0.1);
+}
+
+/* Add page title styles */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-search {
+    display: none;
+  }
+  
+  .header-time {
+    display: none;
+  }
+  
+  .header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .header-title {
+    font-size: 1.25rem;
+  }
+}
